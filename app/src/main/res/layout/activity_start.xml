@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.elite.mychat.StartActivity">
+
+    <TextView
+        android:id="@+id/tv_start_welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:text="Welcome to MyChat App"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start_got"
+        app:layout_constraintEnd_toEndOf="@+id/btn_start_got"
+        app:layout_constraintStart_toStartOf="@+id/btn_start_got"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btn_start_got"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Already have account"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start_new"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start_welcome" />
+
+    <Button
+        android:id="@+id/btn_start_new"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_start_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Need a new account ?"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_start_got"
+        app:layout_constraintStart_toStartOf="@+id/btn_start_got"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_got"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+</android.support.constraint.ConstraintLayout>

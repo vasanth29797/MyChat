@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_my_frndreq"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/tv_my_frndreq_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="User default status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_my_frndreq_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_frndreq_name" />
+
+    <TextView
+        android:id="@+id/tv_my_frndreq_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Display Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_my_frndreq"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_my_frndreq_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF52B73B"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="Accept"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_my_frndreq"
+        app:layout_constraintTop_toBottomOf="@+id/iv_my_frndreq" />
+
+    <ImageView
+        android:id="@+id/iv_friend_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_frndreq_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_frndreq_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_frndreq_name"
+        app:srcCompat="@drawable/ic_online" />
+
+    <Button
+        android:id="@+id/btn_my_frndreq_decline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="Decline"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/btn_my_frndreq_accept"
+        app:layout_constraintTop_toTopOf="@+id/btn_my_frndreq_accept" />
+</android.support.constraint.ConstraintLayout>

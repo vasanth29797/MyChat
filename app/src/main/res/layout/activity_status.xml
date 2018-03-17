@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elite.mychat.StatusActivity">
+
+    <include
+        android:id="@+id/status_page_toolbar"
+        layout="@layout/my_toolbar" />
+
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Save Changes"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/et_status_status"
+        app:layout_constraintTop_toBottomOf="@+id/et_status_status" />
+
+    <ProgressBar
+        android:id="@+id/pb_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_page_toolbar" />
+
+    <EditText
+        android:id="@+id/et_status_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Your Status"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/et_status_status"
+        app:layout_constraintTop_toBottomOf="@+id/status_page_toolbar" />
+
+
+</android.support.constraint.ConstraintLayout>
